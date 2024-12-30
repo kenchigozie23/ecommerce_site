@@ -2,7 +2,7 @@ import {MouseEvent} from 'react';
 import Link from 'next/link';
 import HeaderCart from './cart/HeaderCart';
 import ChooseVariantModal from './header/ChooseVariantModal';
-import logoImg from '../assets/logo.svg';
+import logoImg from '../assets/andrax.png';
 import {faBars} from '@fortawesome/free-solid-svg-icons/faBars';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useAppDispatch} from '../hooks/redux';
@@ -24,7 +24,7 @@ export default function Header({companyTitle}: {companyTitle?: string}) {
 				<div className='page-header__content'>
 					<div className='page-header__logo'>
 						<Link href='/'>
-							<img src={logoImg.src} width={logoImg.width} height={logoImg.height} alt={title} />
+							<img src={logoImg.src} width={110} height={110} alt={title} />
 						</Link>
 					</div>
 					<div className={'page-header__right-blocks'}>

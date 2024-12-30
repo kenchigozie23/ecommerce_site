@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/andrax.png';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
 	const title = companyTitle || 'Your Company LLC.';
 	return <>
         <div className='page-footer__logo'>
 					<Link href='/'>
-						<img src={logoImg.src} width={logoImg.width} height={logoImg.height} alt={title} />
+						<img src={logoImg.src} width={110} height={110} alt={title} />
 					</Link>
         </div>
         <div className='page-footer__company-info'>

@@ -17,8 +17,8 @@
     "theme"
   ],
   "main": "index.js",
-  "repository": "https://github.com/kirill-zhirnov/boundless-nextjs-sample",
-  "author": "Kirill Zhirnov <ekvixgroup@gmail.com>",
+  "repository": "https://github.com/kenchigozie23/ecommerce_site.git",
+  "author": "Kenneth Okoronkwo <kenronkwo@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
