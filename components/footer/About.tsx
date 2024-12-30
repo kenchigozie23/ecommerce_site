@@ -6,7 +6,7 @@ export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
 	return <>
         <div className='page-footer__logo'>
 					<Link href='/'>
-						<img src={logoImg.src} width={110} height={110} alt={title} />
+						<img src={logoImg.src} width={110} height={80} alt={title} />
 					</Link>
         </div>
         <div className='page-footer__company-info'>

@@ -24,7 +24,7 @@ export default function Header({companyTitle}: {companyTitle?: string}) {
 				<div className='page-header__content'>
 					<div className='page-header__logo'>
 						<Link href='/'>
-							<img src={logoImg.src} width={110} height={110} alt={title} />
+							<img src={logoImg.src} width={110} height={80} alt={title} />
 						</Link>
 					</div>
 					<div className={'page-header__right-blocks'}>
