@@ -16,7 +16,7 @@ export default function Header({companyTitle}: {companyTitle?: string}) {
 		dispatch(setIsOpened(true));
 	};
 
-	const title = companyTitle || 'Your Company LLC.';
+	const title = companyTitle || 'KNAS & ESCCAY TECH TRADING:';
 
 	return (
 		<header className='page-header'>

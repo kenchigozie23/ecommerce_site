@@ -7,8 +7,8 @@ import { makeAllMenus } from "../lib/menu";
 import VerticalMenu from "../components/VerticalMenu";
 import { IMenuItem } from "../@types/components";
 import SwiperSlider from "../components/SwiperSlider";
-import cliffImg from "../assets/cliff_1.jpg";
-import cliff2Img from "../assets/cliff_2.jpg";
+import cliffImg from "../assets/bann1.jpg";
+import cliff2Img from "../assets/bann2.jpg";
 import CoverTextInCenter from "../components/CoverTextInCenter";
 import bgImg from "../assets/promo.png";
 import bgPortraitImg from "../assets/promo.png";
@@ -35,14 +35,14 @@ export default function IndexPage({
 					</nav>
 					<div className="col-lg-9 col-md-12">
 						<h1 className="page-heading page-heading_h1  page-heading_m-h1">
-							Boundless store
+							KNAS & ESCCAY STORE
 						</h1>
 						<ProductsList products={products} query={{}} />
 					</div>
 				</div>
 				<div className="container">
 					<h2 className="page-heading page-heading_h1  page-heading_m-h1">
-						Cover example:
+					KNAS & ESCCAY TECH TRADING:
 					</h2>
 				</div>
 			</div>

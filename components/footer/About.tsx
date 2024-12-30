@@ -2,11 +2,11 @@ import Link from 'next/link';
 import logoImg from '../../assets/andrax.png';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
-	const title = companyTitle || 'Your Company LLC.';
+	const title = companyTitle || 'KNAS & ESCCAY TECH TRADING';
 	return <>
         <div className='page-footer__logo'>
 					<Link href='/'>
-						<img src={logoImg.src} width={110} height={80} alt={title} />
+						<img src={logoImg.src} width={110} height={100} alt={title} />
 					</Link>
         </div>
         <div className='page-footer__company-info'>
@@ -14,8 +14,7 @@ export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
         </div>
         <div className='page-footer__disclaimer'>
             <p className='text-muted small'>
-                This website and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
-                Price and availability information is subject to change without notice.
+						Welcome to our go-to destination for premium accessories that enhance your digital lifestyle. From cutting-edge tech gadgets to stylish, functional add-ons, we offer a curated selection of products designed to complement your devices and simplify your life.
             </p>
         </div>
     </>;
