@@ -173,27 +173,27 @@ const useCartItems = () => {
   const [items, setItems] = useState<ICartItem[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const initCartData = useCallback(async (cartId: string) => {
-    setLoading(true);
-    try {
-      const { cart, items } = await apiClient.cart.getCartItems(cartId);
-      setItems(items);
+	const initCartData = useCallback(async (cartId: string) => {
+		setLoading(true);
+		try {
+			const { cart, items } = await apiClient.cart.getCartItems(cartId);
+			setItems(items);
 
-      const total = items.reduce((sum, item) => {
-        const price = Number(calcTotalPrice(item.itemPrice.final_price!, item.qty)) || 0;
-        return sum + price;
-      }, 0);
+			const total = items.reduce((sum, item) => {
+				const price = Number(calcTotalPrice(item.itemPrice.final_price!, item.qty)) || 0;
+				return sum + price;
+			}, 0);
 
-      dispatch(setCartTotal({
-        qty: items.reduce((sum, item) => sum + (Number(item.qty) || 0), 0),
-        total
-      }));
-    } catch (err) {
-      console.error('Failed to fetch cart items:', err);
-    } finally {
-      setLoading(false);
-    }
-  }, [dispatch]);
+			dispatch(setCartTotal({
+				qty: items.reduce((sum, item) => sum + (Number(item.qty) || 0), 0),
+				total: total.toString() // Convert number to string
+			}));
+		} catch (err) {
+			console.error('Failed to fetch cart items:', err);
+		} finally {
+			setLoading(false);
+		}
+	}, [dispatch]);
 
   useEffect(() => {
     if (cartId) {
