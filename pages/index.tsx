@@ -1,6 +1,7 @@
 import { IProduct } from "boundless-api-client";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useState, useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader"; // Import the spinner
 import ProductsList from "../components/ProductsList";
 import MainLayout from "../layouts/Main";
 import { apiClient } from "../lib/api";
@@ -32,38 +33,10 @@ export default function IndexPage({
 
   if (loading) {
     return (
-      <>
-        <style jsx>{`
-          .loader-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* Full-screen height */
-            background-color: #fff; /* Background color */
-          }
-          .spinner {
-            width: 48px;
-            height: 48px;
-            border: 4px solid teal; /* Outer color */
-            border-top: 4px solid transparent; /* Transparent section for the spinner effect */
-            border-radius: 50%;
-            animation: spin 1s linear infinite; /* Rotation animation */
-          }
-          @keyframes spin {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
-        `}</style>
-        <div className="loader-container">
-          <div className="spinner"></div>
-          <p>Loading content</p>
-        </div>
-      </>
+      <div style={styles.loaderContainer}>
+        <ClipLoader color="teal" size={70} /> {/* React Spinner */}
+
+      </div>
     );
   }
 
@@ -186,3 +159,14 @@ function MainPageSlider() {
     />
   );
 }
+
+const styles = {
+  loaderContainer: {
+    display: "flex",
+    flexDirection: "column" as "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
+    backgroundColor: "#fff",
+  },
+};

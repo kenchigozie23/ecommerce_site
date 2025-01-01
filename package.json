@@ -27,6 +27,7 @@
     "lint": "npx eslint --ext .ts --ext .tsx . && npx stylelint ./styles"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.9.6",
     "@fontsource/roboto": "^4.5.3",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
