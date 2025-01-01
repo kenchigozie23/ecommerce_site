@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-const PAYSTACK_SECRET_KEY = "sk_live_b0c2c918f16461c840014a8febea59346071c7d8";
+const PAYSTACK_SECRET_KEY = "sk_live_1f989bb4583225682fbea8c586d81281ef51e9b6";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'GET') {

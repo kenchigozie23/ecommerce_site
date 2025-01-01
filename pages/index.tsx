@@ -14,6 +14,8 @@ import bgImg from "../assets/promo.png";
 import bgPortraitImg from "../assets/promo.png";
 import ProductsSliderByQuery from "../components/ProductsSliderByQuery";
 import { IBasicSettings } from "../@types/settings";
+import { Loader } from 'lucide-react';
+import {  useState } from 'react';
 
 export default function IndexPage({
 	products,
