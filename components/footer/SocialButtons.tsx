@@ -24,7 +24,7 @@ export default function SocialButtons() {
 					</a>
 				</div>
 			</div>
-			<p className='text-muted'>All rights reserved. © Powered by AndraX</p>
+			<p className='text-muted'>All rights reserved. © Knas and Esccay Tech Trading </p>
 		</>
 	);
 }
